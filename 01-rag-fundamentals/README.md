@@ -13,3 +13,4 @@
 ## 进度日志
 
 - 2026-10-13 项目启动
+- 2026-10-13 [Lesson 01] embed_search.py：手写余弦相似度的最小语义检索（sentence-transformers + numpy）
