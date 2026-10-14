@@ -74,4 +74,6 @@ if __name__ == "__main__":
         print(f"\n{'='*50}\n问题: {q}")
         chunks = [c for c, _ in engine.search(q, top_k=3)]
         print(f"检索到 {len(chunks)} 块，交给 LLM...\n")
-        print("回答:", chat(q, chunks))
+        for model_name in ["DeepSeek-V4-Flash", "maas-glm-5.3"]:
+            print(f"--- {model_name} ---")
+            print(chat(q, chunks, model=model_name), "\n")
