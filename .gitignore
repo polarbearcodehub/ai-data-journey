@@ -3,3 +3,7 @@ __pycache__/
 .venv/
 .idea/
 .env
+
+index_store/
+
+02-maintenance-dataset/data/images/
